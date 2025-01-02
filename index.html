@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shopping Planner</h1>
+    <div class="input-section">
+      <input type="text" id="itemInput" placeholder="Enter item...">
+      <button onclick="addItem()">Add Item</button>
+    </div>
+    <ul id="shoppingList"></ul>
+    <h2>Backup List</h2>
+    <ul id="backupList"></ul>
+    <div class="total-expenses">
+      Total Expenses: $<span id="totalAmount">0.00</span>
+    </div>
+    <div class="actions">
+      <button class="refresh-btn" onclick="refreshLists()">Refresh Lists</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
